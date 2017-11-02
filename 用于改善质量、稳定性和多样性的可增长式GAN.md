@@ -3,8 +3,11 @@ title: 用于改善质量、稳定性和多样性的可增长式GAN
 tags: GANs,NVIDIA, Fly
 grammar_cjkRuby: true
 ---
-![1024 x 1024 images generated using the CELEBA-HQ dataset][1]
+![real or fake ?][1]
 
+![real or fake ?][2]
+
+![1024 x 1024 images generated using the CELEBA-HQ dataset][1]
 
 ## 来源
 
@@ -28,7 +31,7 @@ grammar_cjkRuby: true
 
 ## 提出模型
 ### 模型图
-![逐层递增的网络][2]
+![逐层递增的网络][3]
 
 
 以往的 GAN 生成低分辨率图片稳定迅速，但生成高分辨率图片困难重重。这篇文章从简单的低分辨率图片开始同时训练生成器和判别器，然后逐层增加分辨率，让训练的难度每层只增加一点点。感觉就像是算法里面的暴力搜索到二分法搜索，大大提高了高分辨率图片的生成速度及质量。
@@ -60,5 +63,5 @@ http://research.nvidia.com/publication/2017-10_Progressive-Growing-of
 
 
   [1]: ./images/1509608164594.jpg
-  [2]: ./images/1509608211934.jpg
-  [3]: ./images/1509598760376.jpg
+  [2]: ./images/1509626274201.jpg
+  [3]: ./images/1509608211934.jpg
